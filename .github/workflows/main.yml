@@ -4,7 +4,8 @@ on:
   push:
 
 jobs:
-  RunQDE2ETests:
+  test:
+    name: E2E and API tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,5 +21,8 @@ jobs:
       - run: node -p 'os.cpus()'
       - run: npm ci
 
-      - name: Run E2E tests
+      - name: Run Reqres Server API tests
+        run: npm run test:api
+
+      - name: Run Amazon.in E2E tests
         run: npm run test:e2e

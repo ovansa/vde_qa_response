@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "cypress run"
+    "test:e2e": "cypress run --spec cypress/e2e/amazon-e2e/tests/*.cy.ts",
+    "test:api": "cypress run --spec cypress/e2e/req-res-api/tests/*.cy.ts"
   },
   "keywords": [],
   "author": "",

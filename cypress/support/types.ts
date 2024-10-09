@@ -16,3 +16,8 @@ export enum SortOption {
   NewestArrivals = 'Newest Arrivals',
   BestSellers = 'Best Sellers',
 }
+
+export interface ICreateUserRequest {
+  name: string;
+  job: string;
+}

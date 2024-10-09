@@ -1,3 +1,5 @@
+import { SortOption, TelevisionBrand } from '../types';
+
 import selectors from '../selectors';
 
 export class TelevisionsPage {
