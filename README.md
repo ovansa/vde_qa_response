@@ -76,6 +76,16 @@ docker run -it vendease-tests
 
 This allows you to run the tests on any machine without worrying about dependencies like Node.js or Chrome being installed locally.
 
+### Continuous Integration: GitHub Actions
+
+The project is configured to run tests automatically using **GitHub Actions**. Tests are executed on every code push and can also be triggered manually or scheduled to run every night.
+
+#### GitHub Actions Setup
+
+1. **On Push**: The tests will automatically run whenever there is a push to the repository.
+2. **Manual Trigger**: You can manually trigger the test workflow via the **"Run workflow"** button in the GitHub Actions tab.
+3. **Nightly Runs**: Tests are scheduled to run every night at midnight (UTC) using a cron job.
+
 ## Project Structure
 
 The project is organized following the **Page Object Model (POM)** design pattern for better separation of concerns and maintainability.
