@@ -7,7 +7,7 @@ export class HomePage {
     cy.get(selectors.home.sideMenuBar).within(() => {
       cy.findByRole('heading', { name: /Shop by Category/i })
         .should('be.visible')
-        .wait(500); // This short wait added due to a flaky issue where the side menubar closed once an item is clicked
+        .wait(500); // Wait added to handle occasional flakiness where the menu may collapse prematurely
 
       cy.findByText('TV, Appliances, Electronics').click().wait(500);
 

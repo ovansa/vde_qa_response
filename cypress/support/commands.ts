@@ -40,11 +40,3 @@ import '@testing-library/cypress/add-commands';
 Cypress.Commands.add('findById', (value: string) => {
   return cy.get(`#${value}`);
 });
-
-Cypress.Commands.add('findByClass', (value: string) => {
-  return cy.get(`#${value}`);
-});
-
-Cypress.Commands.add('dataCy', (value: string) => {
-  return cy.get(`[data-cy=${value}]`);
-});
