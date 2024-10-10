@@ -3,6 +3,7 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
   viewportHeight: 800,
   viewportWidth: 1280,
+  retries: 1,
   e2e: {
     baseUrl: 'https://www.amazon.in',
     pageLoadTimeout: 60000,

@@ -2,6 +2,7 @@ export default {
   home: {
     hamburgerMenu: '#nav-hamburger-menu',
     sideMenuBar: '#hmenu-content',
+    sideMenuItems: 'a.hmenu-item',
   },
   televisionsPage: {
     brandCheckbox: (brand: string) =>
